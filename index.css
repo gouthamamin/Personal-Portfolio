@@ -1,0 +1,524 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
+
+/* general styles */
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+.container {
+  padding: 5% 10%;
+  text-align: center;
+}
+
+img {
+  border-radius: 50%;
+}
+
+.profile_pic {
+  height: 250px;
+  width: 250px;
+}
+.edu {
+  margin-top: 0px;
+  margin-left: 60px;
+  font-size: 22px;
+}
+.year {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 20px;
+}
+p {
+  font-size: 22px;
+}
+h1 {
+  font-size: 50px;
+}
+
+.section-heading {
+  margin-top: 10px;
+  font-size: 36px;
+  font-family: "Bungee Spice", cursive;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------*/
+/* nav bar */
+nav {
+  background-color: white;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+
+nav li {
+  padding: 10px 30px;
+}
+
+nav a {
+  color: darkblue;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: deepskyblue;
+  text-decoration: line-through;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+/* header section */
+header {
+  background: linear-gradient(180deg, rgb(255, 255, 255), rgb(205, 237, 254));
+  font-size: 25px;
+  padding: 15% 10%;
+  z-index: 1;
+}
+
+header h1 span {
+  color: darkblue;
+  font-family: "Pacifico", cursive;
+  font-size: 90px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+header p {
+  font-size: 30px;
+  font-weight: bolder;
+  padding: 5px;
+  color: white;
+  background-color: red;
+  position: fixed;
+  border-radius: 8px;
+  margin-left: -100px;
+}
+
+header #whatsapp {
+  font-size: 50px;
+  border-radius: 5px;
+  color: #24f70b;
+  position: fixed;
+  margin-left: 1250px;
+  margin-top: 30px;
+}
+
+header h1 span:hover {
+  color: palevioletred;
+}
+
+.typing-text {
+  width: 26ch;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 32px;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+#particles-js {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------*/
+/* about me section */
+.about_field {
+  padding: 5% 10%;
+  text-align: center;
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 1)),
+    url("../images/stars.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------*/
+/* my skills section */
+.skills ul {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.skills li {
+  background-color: paleturquoise;
+  box-shadow: 20px 20px 1px 2px rgba(255, 214, 255, 1);
+  font-size: 35px;
+  margin: 35px;
+  padding: 20px;
+  text-align: center;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------*/
+/* Certifications*/
+.courses {
+  margin-top: 10px;
+  padding: 5% 5%;
+  text-align: center;
+  background-color: #bdd5ff;
+}
+
+.courses-div img {
+  float: left;
+  width: 170px;
+  height: 170px;
+  margin-right: 50px;
+  transition: all 0.3s ease-int-out;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+.courses-div #coursera {
+  margin-top: 70px;
+}
+
+.courses-div #edx {
+  margin-top: 70px;
+}
+
+.courses-div #hackerrank {
+  margin-top: 70px;
+}
+
+.courses-div #microsoft {
+  margin-top: 20px;
+}
+
+.courses-list {
+  display: flex;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/*Projects*/
+.projects {
+  margin-top: 10px;
+  padding: 5% 5%;
+  /*text-align: center;*/
+}
+
+div ul li {
+  text-align: justify;
+}
+
+.projects h2 {
+  text-align: center;
+}
+
+.projects span {
+  font-size: 22px;
+}
+
+.projects p {
+  text-align: justify;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------*/
+/*Internships*/
+.internship {
+  padding: 5% 5%;
+  text-align: center;
+  background-color: #bdd5ff;
+}
+
+.internship p {
+  text-align: justify;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------*/
+/* my education  */
+.edu_field {
+  padding: 5% 10%;
+  text-align: center;
+  background-color: #bdd5ff;
+}
+
+.edu-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.work-items img {
+  margin-bottom: 30px;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------*/
+/* footer */
+#twitter {
+  color: #00acee;
+}
+
+#facebook {
+  color: #4267b2;
+}
+
+#linkedin {
+  color: #0a66c2;
+}
+
+#github {
+  color: #000;
+}
+
+#telegram {
+  color: #0088cc;
+}
+
+#whatsapp {
+  color: #12df2e;
+}
+
+#instagram {
+  font-size: 50px;
+  padding: 5px;
+  color: red;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.social {
+  margin-top: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+.copyrigthts {
+  padding: 5% 5%;
+  text-align: center;
+}
+.svg-inline--fa {
+  font-size: 35px;
+}
+
+/*---------------------------------------------------------------------------------------------------------------*/
+/*Contact Me*/
+
+footer h2 {
+  text-align: center;
+}
+.Contact-MainDiv {
+  display: flex;
+  border-spacing: 50px;
+}
+
+.LeftDiv {
+  background-color: white;
+  float: left;
+  width: 50%;
+  padding: 20px;
+}
+
+.RightDiv {
+  background-color: white;
+  float: right;
+  width: 50%;
+  padding: 20px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------*/
+/* Right div*/
+.RightDiv p {
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+.RightDiv h2 {
+  font-family: sans-serif;
+  margin-left: 30px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+/*.RightDiv #mainForm{
+  padding: 50px;
+  background-color: whitesmoke;
+}*/
+
+#mainForm input {
+  padding: 7px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  border: 1px solid #d5dbd9;
+}
+
+#mainForm input:focus {
+  border: 2px solid #000;
+}
+
+#mainForm #fname {
+  margin-left: 30px;
+  height: 25px;
+  width: 200px;
+}
+
+#mainForm #email {
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-left: 30px;
+  height: 25px;
+  width: 200px;
+}
+
+#mainForm #subject {
+  margin-top: 20px;
+  margin-left: 30px;
+  height: 25px;
+  width: 460px;
+}
+
+#mainForm #message {
+  margin-top: 20px;
+  margin-left: 30px;
+  height: 80px;
+  width: 460px;
+}
+
+#messageMe {
+  color: red;
+}
+
+.SMbtn {
+  margin-left: 30px;
+  margin-top: 20px;
+  width: 250px;
+  height: 45px;
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: bolder;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.SMbtn:hover {
+  background-color: #2ee59d;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+#sendMsg {
+  color: #2eb6ff;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------*/
+/*Left Div*/
+
+.leftname #leftDiv-heading {
+  margin-top: 60px;
+  margin-left: 0px;
+}
+
+.leftname,
+p {
+  margin-left: 0px;
+}
+
+.leftname,
+.leftaddress,
+.leftemail span {
+  margin-left: 0px;
+}
+
+#icon-user,
+#icon-address,
+#icon-email {
+  color: red;
+}
+
+/*-----------------------------------------copyrights----------------------------------------------------------------------------*/
+
+.copyrights {
+  background-color: black;
+  padding: 10px;
+}
+
+.copyrights h3 {
+  margin-top: 10px;
+  text-align: center;
+  color: white;
+}
+
+.copyrights span {
+  color: red;
+}
+
+.copyrights .social {
+  margin-top: 0px;
+  font-size: 36px;
+
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.copyrights .social i {
+  color: salmon;
+}
+.copyrights .social #twitter {
+  color: #66d6fc;
+}
+
+.copyrights .social #facebook {
+  color: #2282fc;
+}
+
+.copyrights .social #instagram {
+  font-size: 28px;
+}
+
+.copyrights .social #linkedin {
+  color: #3f9bf8;
+}
+
+.copyrights .social #github {
+  color: white;
+}
+
+.copyrights .social #telegram {
+  color: #52c1fd;
+}
+
+.copyrights #code {
+  font-size: 48px;
+}
+
+.copyrights p {
+  color: white;
+  text-align: center;
+  font-family: "Titan One", cursive;
+}
